@@ -15,33 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bin\Src\GameStateMgr.cpp">
+    <ClCompile Include="BinFiles\Src\GameStateLevel1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bin\Src\Main.cpp">
+    <ClCompile Include="BinFiles\Src\GameStateMainMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bin\Src\GameStateMainMenu.cpp">
+    <ClCompile Include="BinFiles\Src\GameStateMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bin\Src\GameStateLevel1.cpp">
+    <ClCompile Include="BinFiles\Src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bin\Header\Main.h">
+    <ClInclude Include="BinFiles\Header\GameStateLevel1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bin\Header\GameStates.h">
+    <ClInclude Include="BinFiles\Header\GameStateMainMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bin\Header\GameStateMainMenu.h">
+    <ClInclude Include="BinFiles\Header\GameStateMgr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bin\Header\GameStateLevel1.h">
+    <ClInclude Include="BinFiles\Header\GameStates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bin\Header\GameStateMgr.h">
+    <ClInclude Include="BinFiles\Header\Main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

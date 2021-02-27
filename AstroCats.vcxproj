@@ -47,14 +47,14 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)Extern\AlphaEngine_V3.08\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Extern\AlphaEngine_V3.08\lib;$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)\bin\$(Configuration)-$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)\BinFiles\$(Configuration)-$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)Extern\AlphaEngine_V3.08\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Extern\AlphaEngine_V3.08\lib;$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)\bin\$(Configuration)-$(Platform)\</OutDir>
+    <OutDir>$(SolutionDir)\BinFiles\$(Configuration)-$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -88,17 +88,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bin\Src\GameStateLevel1.cpp" />
-    <ClCompile Include="bin\Src\GameStateMainMenu.cpp" />
-    <ClCompile Include="bin\Src\GameStateMgr.cpp" />
-    <ClCompile Include="bin\Src\Main.cpp" />
+    <ClCompile Include="BinFiles\Src\GameStateLevel1.cpp" />
+    <ClCompile Include="BinFiles\Src\GameStateMainMenu.cpp" />
+    <ClCompile Include="BinFiles\Src\GameStateMgr.cpp" />
+    <ClCompile Include="BinFiles\Src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bin\Header\GameStateLevel1.h" />
-    <ClInclude Include="bin\Header\GameStateMainMenu.h" />
-    <ClInclude Include="bin\Header\GameStateMgr.h" />
-    <ClInclude Include="bin\Header\GameStates.h" />
-    <ClInclude Include="bin\Header\Main.h" />
+    <ClInclude Include="BinFiles\Header\GameStateLevel1.h" />
+    <ClInclude Include="BinFiles\Header\GameStateMainMenu.h" />
+    <ClInclude Include="BinFiles\Header\GameStateMgr.h" />
+    <ClInclude Include="BinFiles\Header\GameStates.h" />
+    <ClInclude Include="BinFiles\Header\Main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
