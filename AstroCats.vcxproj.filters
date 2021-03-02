@@ -27,6 +27,9 @@
     <ClCompile Include="BinFiles\Src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BinFiles\Src\TowerInformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinFiles\Header\GameStateLevel1.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BinFiles\Header\Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\TowerInformation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

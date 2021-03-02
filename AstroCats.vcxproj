@@ -92,6 +92,7 @@
     <ClCompile Include="BinFiles\Src\GameStateMainMenu.cpp" />
     <ClCompile Include="BinFiles\Src\GameStateMgr.cpp" />
     <ClCompile Include="BinFiles\Src\Main.cpp" />
+    <ClCompile Include="BinFiles\Src\TowerInformation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinFiles\Header\GameStateLevel1.h" />
@@ -99,6 +100,7 @@
     <ClInclude Include="BinFiles\Header\GameStateMgr.h" />
     <ClInclude Include="BinFiles\Header\GameStates.h" />
     <ClInclude Include="BinFiles\Header\Main.h" />
+    <ClInclude Include="BinFiles\Header\TowerInformation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

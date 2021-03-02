@@ -14,3 +14,4 @@ extern double	g_appTime;
 
 #include "GameStates.h"
 #include "GameStateMgr.h"
+#include "TowerInformation.h"
