@@ -96,6 +96,8 @@
     <ClCompile Include="BinFiles\Src\GameStateMgr.cpp" />
     <ClCompile Include="BinFiles\Src\GameStateSettings.cpp" />
     <ClCompile Include="BinFiles\Src\Main.cpp" />
+    <ClCompile Include="BinFiles\Src\Map.cpp" />
+    <ClCompile Include="BinFiles\Src\Pathfinding.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinFiles\Header\EnemyManager.h" />
@@ -107,6 +109,11 @@
     <ClInclude Include="BinFiles\Header\GameStates.h" />
     <ClInclude Include="BinFiles\Header\GameStateSettings.h" />
     <ClInclude Include="BinFiles\Header\Main.h" />
+    <ClInclude Include="BinFiles\Header\Map.h" />
+    <ClInclude Include="BinFiles\Header\Pathfinding.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BinFiles\Resources\BinaryMap.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

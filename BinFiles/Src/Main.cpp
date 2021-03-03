@@ -27,7 +27,6 @@ int WINAPI WinMain(_In_ HINSTANCE instanceH, _In_opt_ HINSTANCE prevInstanceH, _
 
 	// Initialize the system
 	AESysInit(instanceH, show, WIN_WIDTH, WIN_HEIGHT, 1, 60, false, NULL);
-	//AESysInit(instanceH, show, 1200, 800, 1, 60, false, NULL);
 
 	// Changing the window title
 	AESysSetWindowTitle("Astrocats");

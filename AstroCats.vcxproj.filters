@@ -37,6 +37,10 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BinFiles\Src\GameStateSettings.cpp">
+    <ClCompile Include="BinFiles\Src\Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinFiles\Src\Pathfinding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,5 +72,16 @@
     <ClInclude Include="BinFiles\Header\GameStateSettings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BinFiles\Header\Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\Pathfinding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BinFiles\Resources\BinaryMap.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

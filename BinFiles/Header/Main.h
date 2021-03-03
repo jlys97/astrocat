@@ -9,6 +9,9 @@
 #include "GameStates.h"
 #include "GameStateMgr.h"
 #include "GameStateMainMenu.h"
+#include <iostream>
+#include <fstream>
+#include "Map.h"
 
 //------------------------------------
 // Macros
@@ -33,3 +36,4 @@ typedef struct
 extern mPos mousePos;
 
 void MainFreeUnload();
+
