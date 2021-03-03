@@ -18,21 +18,30 @@
     <ClCompile Include="BinFiles\Src\GameStateLevel1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BinFiles\Src\GameStateMainMenu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BinFiles\Src\GameStateMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BinFiles\Src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BinFiles\Src\EnemyManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinFiles\Src\GameStateCredits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinFiles\Src\GameStateLevelSelect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinFiles\Src\GameStateMainMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinFiles\Src\GameStateSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinFiles\Header\GameStateLevel1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BinFiles\Header\GameStateMainMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BinFiles\Header\GameStateMgr.h">
@@ -42,6 +51,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BinFiles\Header\Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\EnemyManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\GameStateCredits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\GameStateLevelSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\GameStateMainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinFiles\Header\GameStateSettings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

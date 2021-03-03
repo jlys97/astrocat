@@ -15,7 +15,8 @@
 //	static int** TowerMap;
 //};
 
-Map::Map(int w, int h) : width{ w }, height{ h } {
+Map::Map(int w, int h) : width{ w }, height{ h } 
+{
 	BinaryMap = new int* [height];
 	TowerMap = new int* [height];
 

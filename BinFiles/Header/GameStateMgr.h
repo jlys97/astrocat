@@ -7,6 +7,10 @@
 // include the list of game states
 
 #include "GameStates.h"
+#include "GameStateLevelSelect.h"
+#include "GameStateLevel1.h"
+#include "GameStateSettings.h"
+#include "GameStateCredits.h"
 
 // ---------------------------------------------------------------------------
 // externs

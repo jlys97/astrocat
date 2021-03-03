@@ -49,7 +49,44 @@ void GameStateMgrUpdate()
 	switch (gGameStateCurr)
 	{
 	case GS_MAINMENU:
-
+		GameStateInit = GameStateMainMenuInit;
+		GameStateDraw = GameStateMainMenuDraw;
+		GameStateFree = GameStateMainMenuFree;
+		GameStateLoad = GameStateMainMenuLoad;
+		GameStateUnload = GameStateMainMenuUnload;
+		GameStateUpdate = GameStateMainMenuUpdate;
+		break;
+	case GS_LEVELSELECT:
+		GameStateInit = GameStateLevelSelectInit;
+		GameStateDraw = GameStateLevelSelectDraw;
+		GameStateFree = GameStateLevelSelectFree;
+		GameStateLoad = GameStateLevelSelectLoad;
+		GameStateUnload = GameStateLevelSelectUnload;
+		GameStateUpdate = GameStateLevelSelectUpdate;
+		break;
+	case GS_LEVEL1:
+		GameStateInit = GameStateLevel1Init;
+		GameStateDraw = GameStateLevel1Draw;
+		GameStateFree = GameStateLevel1Free;
+		GameStateLoad = GameStateLevel1Load;
+		GameStateUnload = GameStateLevel1Unload;
+		GameStateUpdate = GameStateLevel1Update;
+		break;
+	case GS_SETTINGS:
+		GameStateInit = GameStateSettingsInit;
+		GameStateDraw = GameStateSettingsDraw;
+		GameStateFree = GameStateSettingsFree;
+		GameStateLoad = GameStateSettingsLoad;
+		GameStateUnload = GameStateSettingsUnload;
+		GameStateUpdate = GameStateSettingsUpdate;
+		break;
+	case GS_CREDITS:
+		GameStateInit = GameStateCreditsInit;
+		GameStateDraw = GameStateCreditsDraw;
+		GameStateFree = GameStateCreditsFree;
+		GameStateLoad = GameStateCreditsLoad;
+		GameStateUnload = GameStateCreditsUnload;
+		GameStateUpdate = GameStateCreditsUpdate;
 		break;
 	default:
 		AE_FATAL_ERROR("invalid state!!");
