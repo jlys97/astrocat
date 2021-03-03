@@ -104,6 +104,9 @@
     <ClInclude Include="BinFiles\Header\Map.h" />
     <ClInclude Include="BinFiles\Header\Pathfinding.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="BinFiles\Resources\BinaryMap.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

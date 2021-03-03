@@ -5,7 +5,6 @@
 
 extern float	g_dt;
 extern double	g_appTime;
-extern int		ROW, COL;
 
 // ---------------------------------------------------------------------------
 // includes

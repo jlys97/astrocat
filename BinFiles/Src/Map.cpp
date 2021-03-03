@@ -1,4 +1,6 @@
-#include "../Header/Map.h"
+#include "../Header/Main.h"
+
+int ROW, COL;
 
 Map::Map(int w, int h, int s) : width{ w }, height{ h }, scale{ s } {
 	BinaryMap = new int* [height];
@@ -9,6 +11,9 @@ Map::Map(int w, int h, int s) : width{ w }, height{ h }, scale{ s } {
 		BinaryMap[i] = new int[width];
 		TowerMap[i] = new int[width];
 	}
+
+	ROW = h;
+	COL = w;
 }
 
 Map::~Map() {
@@ -32,7 +37,7 @@ int Map::LoadMap(const char* filename) {
 	}
 
 	int rowcount = 0, columncount = 0;
-	int c;
+	char c;
 
 	while (rowcount < height && columncount < width)
 	{
@@ -80,26 +85,26 @@ void Map::DrawMap() {
 	}
 }
 
-int Map::PlaceTower(int x, int y) { //add tower type enum
+int Map::PlaceTower(Point const& cell) { //add tower type enum
 
-	if (!isValid(x, y)) // check towertype exists
+	if (!isValid(cell)) // check towertype exists
 		return 0;
 
-	BinaryMap[y][x] = 1;
-	TowerMap[y][x] = 1; // replace with tower type later
+	BinaryMap[cell.posY][cell.posX] = Maptype::Blocked;
+	TowerMap[cell.posY][cell.posX] = 1; // replace with tower type later
 	return 1;
 }
 
-int Map::GetBinaryValue(int x, int y) const {
-	if (isValid(x, y))
-		return BinaryMap[y][x];
+int Map::GetBinaryValue(Point const& cell) const {
+	if (isValid(cell))
+		return BinaryMap[cell.posY][cell.posX];
 	else 
 		return 0;
 }
 
-int Map::GetTowerValue(int x, int y) const {
-	if (isValid(x, y))
-		return TowerMap[y][x];
+int Map::GetTowerValue(Point const& cell) const {
+	if (isValid(cell))
+		return TowerMap[cell.posY][cell.posX];
 	else
 		return 0;
 }
@@ -109,7 +114,7 @@ int Map::GetTowerValue(int x, int y) const {
 
 
 //Utility function to check if given cell is valid
-bool isValid(int row, int col) {
+bool isValid(Point const& cell) {
 	//returns true if row and column numbers are in range
-	return (row >= 0) && (row < ROW) && (col >= 0) && (col < COL);
+	return (cell.posY >= 0) && (cell.posY < ROW) && (cell.posX >= 0) && (cell.posX < COL);
 }

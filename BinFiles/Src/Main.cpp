@@ -11,7 +11,7 @@ double	 g_appTime;
 	Starting point of the application
 */
 /******************************************************************************/
-int WINAPI WinMain(HINSTANCE instanceH, HINSTANCE prevInstanceH, LPSTR command_line, int show)
+int WINAPI wWinMain(HINSTANCE instanceH, HINSTANCE prevInstanceH, LPSTR command_line, int show)
 {
 	UNREFERENCED_PARAMETER(prevInstanceH);
 	UNREFERENCED_PARAMETER(command_line);
@@ -25,17 +25,17 @@ int WINAPI WinMain(HINSTANCE instanceH, HINSTANCE prevInstanceH, LPSTR command_l
 
 
 	// Initialize the system
-	AESysInit(instanceH, show, 800, 600, 1, 60, false, NULL);
+	AESysInit(instanceH, show, 1600, 900, 1, 60, false, NULL);
 
 	// Changing the window title
-	AESysSetWindowTitle("Asteroids Demo!");
+	AESysSetWindowTitle("AstroCats");
 
 	//set background color
 	AEGfxSetBackgroundColor(0.0f, 0.0f, 0.0f);
 
 
 
-	GameStateMgrInit(GS_QUIT);
+	GameStateMgrInit(GS_MAINMENU);
 
 	while (gGameStateCurr != GS_QUIT)
 	{
