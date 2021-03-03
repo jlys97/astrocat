@@ -16,8 +16,8 @@
 //------------------------------------
 // Macros
 
-#define WIN_HEIGHT 800
-#define WIN_WIDTH 1200
+#define WIN_HEIGHT 900
+#define WIN_WIDTH 1600
 
 //------------------------------------
 // Globals

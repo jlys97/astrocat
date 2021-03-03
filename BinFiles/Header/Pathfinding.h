@@ -13,7 +13,7 @@ struct List {
 };
 
 enum MAX {
-	MaxCost = 20000;
+	MaxCost = 20000
 };
 
 bool isUnblocked(Map const&, Point const&);

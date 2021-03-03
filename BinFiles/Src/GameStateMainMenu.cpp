@@ -12,7 +12,7 @@ AEGfxVertexList* logoMesh;
 
 mPos mousePos;
 
-f64 time;
+f64 menuTime;
 
 
 /******************************************************************************/
@@ -111,10 +111,9 @@ void GameStateMainMenuInit()
 /******************************************************************************/
 void GameStateMainMenuUpdate()
 {
-	time += AEFrameRateControllerGetFrameTime();
-	//printf("%f\n", time);
-	if (time > 3 && firstTime == false)
-	//if (time > 0 && first == false)
+	menuTime += AEFrameRateControllerGetFrameTime();
+	if (menuTime > 3 && firstTime == false)
+	//if (menuTime > 0 && first == false)
 	{
 		if (AEInputCheckTriggered(AEVK_UP))
 		{
@@ -168,7 +167,7 @@ void GameStateMainMenuUpdate()
 /******************************************************************************/
 void GameStateMainMenuDraw()
 {
-	if (time < 3)
+	if (menuTime < 3)
 	{
 	/*	AEGfxSetTransform(logoScale.m);
 		RenderButton(0.0f, dpLogo, logoMesh);*/
@@ -277,7 +276,7 @@ void RenderButton(float f, AEGfxTexture* tex, AEGfxVertexList* mesh)
 
 	AEGfxSetRenderMode(AE_GFX_RM_TEXTURE);
 	AEGfxSetTintColor(1.0f, 1.0f, 1.0f, 1.0f);
-	AEGfxSetPosition(-100, pc + 10);
+	AEGfxSetPosition(-120, pc + 10);
 	AEGfxTextureSet(tex, 0, 0);
 	AEGfxSetTransparency(1.0f);
 	AEGfxSetBlendMode(AE_GFX_BM_BLEND);
